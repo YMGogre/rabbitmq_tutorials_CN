@@ -21,7 +21,7 @@ channel.QueueDeclare(queue: "hello",            //消息队列名称
 //创建（将 IBasicConsumer 接口实现为事件的）EventingBasicConsumer 类对象并关联指定的 channel
 var consumer = new EventingBasicConsumer(channel);
 /* 
- * 启动一个基本的内容类消费者（在当前通道中监听 myTestQueue 消息队列，并进行消费）
+ * 启动一个基本的内容类消费者（在当前通道中监听 hello 消息队列，并进行消费）
  * 调用 BasicConsume 方法后，您的应用程序就可以开始从指定的消息队列中接收消息了。
  * 当从消息队列中接收到一条消息时，消费者对象的 Received 事件会被触发，并执行相应的事件处理程序。
  */
