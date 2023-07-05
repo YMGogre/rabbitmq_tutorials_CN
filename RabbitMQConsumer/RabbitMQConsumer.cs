@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
@@ -14,7 +12,7 @@ var connection = factory.CreateConnection();
 //创建一个新的通道、会话和模型
 var channel = connection.CreateModel();
 //声明一个消息队列
-channel.QueueDeclare(queue: "myTestQueue",      //消息队列名称
+channel.QueueDeclare(queue: "hello",            //消息队列名称
                      durable: false,            //队列是否能在代理重启后仍然存在
                      exclusive: false,          //是否应该将此队列限制在其声明的连接中?这样的队列将在其声明连接关闭时被删除。（在一个客户端同时发送和读取消息的应用场景中适用）
                      autoDelete: false,         //当最后一个消费者(如果有的话)退订时，是否应该自动删除这个队列?
@@ -27,8 +25,8 @@ var consumer = new EventingBasicConsumer(channel);
  * 调用 BasicConsume 方法后，您的应用程序就可以开始从指定的消息队列中接收消息了。
  * 当从消息队列中接收到一条消息时，消费者对象的 Received 事件会被触发，并执行相应的事件处理程序。
  */
-channel.BasicConsume(queue: "myTestQueue",      //消息队列名称
-                     autoAck: true,             //是否自动发送确认消息（acknowledgement）给 RabbirMQ 服务器
+channel.BasicConsume(queue: "hello",            //消息队列名称
+                     autoAck: true,             //是否自动发送确认消息（acknowledgement）给 RabbitMQ 服务器
                      consumer: consumer);       //指定用于接收消息的消费者对象
 
 //使用 Lambda 表达式注册事件处理程序并订阅 Received 事件

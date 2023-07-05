@@ -22,7 +22,7 @@
 ### Code
 
 每个命令最好在 从教程目录的根目录运行的单独的控制台/终端实例 中运行。
-![](./image/Q%26A/3-%E5%9C%A8%E7%89%B9%E5%AE%9A%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6.gif)
+![指定目录启动 cmd](./image/Q%26A/3-%E5%9C%A8%E7%89%B9%E5%AE%9A%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6.gif)
 
 #### [教程一: RabbitMQ 入门 以及 "Hello World!"](https://blog.csdn.net/YMGogre/article/details/131087813)
 
@@ -31,7 +31,14 @@ dotnet run --project RabbitMQProducer/RabbitMQProducer.csproj
 dotnet run --project RabbitMQConsumer/RabbitMQConsumer.csproj
 ```
 
-#### [教程二: RPC](https://blog.csdn.net/YMGogre/article/details/131472742)
+#### [教程二：工作队列](https://blog.csdn.net/YMGogre/article/details/131561085)
+
+```shell
+dotnet run --project Worker/Worker.csproj
+dotnet run --project NewTask/NewTask.csproj
+```
+
+#### [教程六: RPC](https://blog.csdn.net/YMGogre/article/details/131472742)
 
 ```shell
 dotnet run --project RPCServer/RPCServer.csproj
