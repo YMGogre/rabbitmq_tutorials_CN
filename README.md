@@ -38,6 +38,13 @@ dotnet run --project Worker/Worker.csproj
 dotnet run --project NewTask/NewTask.csproj
 ```
 
+#### [教程三：发布/订阅](https://blog.csdn.net/YMGogre/article/details/131568234)
+
+```shell
+dotnet run --project ReceiveLogs/ReceiveLogs.csproj
+dotnet run --project EmitLog/EmitLog.csproj
+```
+
 #### [教程六: RPC](https://blog.csdn.net/YMGogre/article/details/131472742)
 
 ```shell

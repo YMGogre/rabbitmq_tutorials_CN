@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCClient", "RPCClient\RPCC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCServer", "RPCServer\RPCServer.csproj", "{8C24E912-62D5-4641-A02D-5F0E32650FB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "NewTask\NewTask.csproj", "{03AA491A-5FF1-40A1-9BD8-31BFF1A27B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewTask", "NewTask\NewTask.csproj", "{03AA491A-5FF1-40A1-9BD8-31BFF1A27B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{038827D2-3235-42E8-9F90-5FC766CC96B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csproj", "{038827D2-3235-42E8-9F90-5FC766CC96B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLog", "EmitLog\EmitLog.csproj", "{E1DF091B-BCBD-4BBD-B1D3-436723D1CB07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogs", "ReceiveLogs\ReceiveLogs.csproj", "{C6452FBF-1C3E-4742-927C-EA59BCE557EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{038827D2-3235-42E8-9F90-5FC766CC96B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038827D2-3235-42E8-9F90-5FC766CC96B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{038827D2-3235-42E8-9F90-5FC766CC96B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DF091B-BCBD-4BBD-B1D3-436723D1CB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DF091B-BCBD-4BBD-B1D3-436723D1CB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DF091B-BCBD-4BBD-B1D3-436723D1CB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DF091B-BCBD-4BBD-B1D3-436723D1CB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6452FBF-1C3E-4742-927C-EA59BCE557EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6452FBF-1C3E-4742-927C-EA59BCE557EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6452FBF-1C3E-4742-927C-EA59BCE557EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6452FBF-1C3E-4742-927C-EA59BCE557EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
