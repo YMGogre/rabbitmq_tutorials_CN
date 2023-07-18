@@ -52,6 +52,13 @@ dotnet run --project ReceiveLogsDirect/ReceiveLogsDirect.csproj info
 dotnet run --project EmitLogDirect/EmitLogDirect.csproj
 ```
 
+#### [教程五：主题](https://blog.csdn.net/YMGogre/article/details/131774981)
+
+```shell
+dotnet run --project ReceiveLogsTopic/ReceiveLogsTopic.csproj anonymous.info
+dotnet run --project EmitLogTopic/EmitLogTopic.csproj
+```
+
 #### [教程六: RPC](https://blog.csdn.net/YMGogre/article/details/131472742)
 
 ```shell
