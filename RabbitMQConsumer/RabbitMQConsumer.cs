@@ -26,7 +26,7 @@ var consumer = new EventingBasicConsumer(channel);
  * 当从消息队列中接收到一条消息时，消费者对象的 Received 事件会被触发，并执行相应的事件处理程序。
  */
 channel.BasicConsume(queue: "hello",            //消息队列名称
-                     autoAck: true,             //是否自动发送确认消息（acknowledgement）给 RabbitMQ 服务器
+                     autoAck: true,             //启用自动消息（acknowledgement）确认
                      consumer: consumer);       //指定用于接收消息的消费者对象
 
 //使用 Lambda 表达式注册事件处理程序并订阅 Received 事件

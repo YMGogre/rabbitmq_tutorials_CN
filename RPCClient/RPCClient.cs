@@ -44,7 +44,7 @@ public class RpcClient : IDisposable
         //启动一个基本的内容类消费者（在当前通道中监听“回调”消息队列，并进行消费）
         channel.BasicConsume(consumer: consumer,        //指定用于接收消息的消费者对象
                              queue: replyQueueName,     //消息队列名称
-                             autoAck: true);            //是否自动发送确认消息（acknowledgement）给 RabbitMQ 服务器
+                             autoAck: true);            //启用自动消息（acknowledgement）确认
     }
 
     /// <summary>

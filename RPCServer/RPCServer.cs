@@ -25,7 +25,7 @@ var consumer = new EventingBasicConsumer(channel);
 
 //启动一个基本的内容类消费者（在当前通道中监听特定消息队列，并进行消费）
 channel.BasicConsume(queue: "rpc_queue",        //消息队列名称
-                     autoAck: false,            //是否自动发送确认消息（acknowledgement）给消息队列服务器
+                     autoAck: false,            //停用自动消息（acknowledgement）确认（使用手动消息确认）
                      consumer: consumer);       //指定用于接收消息的消费者对象
 Console.WriteLine(" [x] 等待 RPC 请求中...");
 
