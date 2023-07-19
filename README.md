@@ -1,9 +1,9 @@
 # RabbitMQ .NET C# 代码 教程
 
-在[这里](https://github.com/rabbitmq/rabbitmq-tutorials/tree/main/dotnet)，您可以找到使用 .NET 7.0 的 [RabbitMQ
+在这儿您可以找到使用 .NET 7.0 的 [RabbitMQ
 教程](https://www.rabbitmq.com/getstarted.html)的 C# 代码示例。
 
-在[这里](https://github.com/rabbitmq/rabbitmq-tutorials/tree/main/dotnet)，您还可以找到 Visual Studio 2022 的解决方案文件。
+您还可以找到 Visual Studio 2022 的解决方案文件。
 
 要成功使用这些示例，您需要一个正在运行的 RabbitMQ 服务器。
 
@@ -64,4 +64,10 @@ dotnet run --project EmitLogTopic/EmitLogTopic.csproj
 ```shell
 dotnet run --project RPCServer/RPCServer.csproj
 dotnet run --project RPCClient/RPCClient.csproj
+```
+
+#### [教程七：发布者确认](https://blog.csdn.net/YMGogre/article/details/131804368)
+
+```shell
+dotnet run --project PublisherConfirms/PublisherConfirms.csproj
 ```
